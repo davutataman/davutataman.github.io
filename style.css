@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    background-image: url("bg1122.jpg");
+    background-size: cover;
+}
+
+a{
+    color: whitesmoke;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+/*header start*/
+header{
+    height: 100px;
+    border-bottom: 2px;
+    border-bottom-style: ridge;
+    border-color: rgba(19, 9, 9, 0.336);
+}
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;  /* Bu kod LOGO ve UL'yi birbirinden tamamen uzaklaştırmaya yarıyor.En uzak köşelere atıyor. */
+    align-items: center; /* dikeyde aynı hizada olmasını sağlıyor*/
+    height: 100%; /* kapsayıcısının 100% yüksekliğini alacak*/
+}
+
+header nav .logo a{
+    color: rgb(100, 59, 59);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none; /*Listedeki yazıların yanındaki noktayı kaldırdık.*/
+    display: flex; /*bu listedeki ögelerin yanyana gelmesini sağlıyor. */
+    column-gap: 30px; /*Yanyanayken arakarında boşluk bırakmamızı sağlıyor. */
+}
+
+nav ul a{
+    color: rgb(100, 59, 59);
+    text-decoration: none;
+}
+
+nav ul a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #d3d3d3;
+    padding: 14px 12px;
+    border-radius: 40px; /*Bu komut köşeleri yuvarlak yapar. */
+    transition: color .15s ease;
+}
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+nav .menu .menu-button{
+    color: #000000;
+    text-decoration: none;
+    background-color: #d3d3d3;
+    padding: 14px 12px;
+    border-radius: 40px; /*Bu komut köşeleri yuvarlak yapar. */
+    transition: color .25s ease;
+}
+
+nav .menu .menu-button:hover{
+    background-color: rgb(141, 152, 184);
+    color: antiquewhite;
+}
+
+
+/*header end*/
+
+/*responsive start*/
+@media(max-width:622px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .menu ul{
+        column-gap: 20px;
+    }
+}
+/*responsive end*/
+
+.content{
+    color: rgb(100, 59, 59);
+    width: 100vh 100px;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+
+
+.me{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    list-style: none;
+
+
+}
+
+.me h2 ul{
+    list-style: none;
+}
+
+.ilgi{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    list-style: none;
+}
+.yazilim{
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    list-style: none;
+}
+
+footer{
+    background: rgb(100, 59, 59) ;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+    
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer-content h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align: center;
+    
+}
+
+footer content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    display: flex;
+}
+
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.social a i{
+    font-size: 1.1rem;
+}
+
+.social a:hover i{
+    color: aqua;
+}
+
+.footer-bottom{
+    background-color: rgb(100, 59, 59);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
